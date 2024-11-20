@@ -18,6 +18,6 @@ jobs:
         python -m pip install ruff pytest
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi 
     - name: Linting with Ruff
-      run: ruff --check .
+      run: ruff check .
     - name: Test with pytest
       run: pytest
